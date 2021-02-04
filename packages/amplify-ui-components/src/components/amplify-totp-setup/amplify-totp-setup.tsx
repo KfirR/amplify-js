@@ -141,6 +141,7 @@ export class AmplifyTOTPSetup {
           submitButtonText={I18n.get(Translations.TOTP_SUBMIT_BUTTON_TEXT)}
           handleSubmit={event => this.verifyTotpToken(event)}
           loading={this.loading}
+          secondaryFooterContent={this.setupMessage}
         >
           <div class="totp-setup">
             {this.qrCodeImageSource && <img src={this.qrCodeImageSource} alt={I18n.get(Translations.QR_CODE_ALT)} />}
